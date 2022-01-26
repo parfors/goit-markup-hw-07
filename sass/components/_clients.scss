@@ -1,0 +1,33 @@
+.clients-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin: 0 0 50px 0;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid;
+  border-radius: 4px;
+  transition: color 250ms var(--transition-funktion);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.clients-icon {
+  fill: currentColor;
+}
