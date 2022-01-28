@@ -1,8 +1,10 @@
 @import './utils/variables';
 @import './utils/modern-normalize';
 @import './utils/base-styles';
+@import './utils/mixins';
 @import './utils/visually-hidden';
 @import './components/header';
+@import './components/small-components/logo';
 @import './components/hero';
 @import './components/features';
 @import './components/techniques';

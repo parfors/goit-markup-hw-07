@@ -1,54 +1,26 @@
 .header {
   border-bottom: #ececec 1px solid;
 }
-nav a {
-  display: block;
-  padding: 32px 0;
-}
+
 .header-container {
-  display: flex;
-  align-items: center;
+  @include flex-alignment();
+}
+.logo_part--part-color {
+  color: #000000;
 }
 .site-nav {
   display: flex;
 }
 
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-item:last-child {
-  margin-left: 50px;
-}
-.logo {
-  font-family: var(--secondery-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--accent-color);
-  margin-right: 93px;
-}
-.hedaer-logo-part {
-  color: #000000;
-}
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
-}
-
-.current.site-nav-link {
-  color: var(--accent-color);
-}
-.site-nav-link {
+.site-nav__link {
+  display: block;
+  padding: 32px 0;
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font($fw: 500);
   color: var(--title-text-color);
   text-decoration: none;
   &:hover,
@@ -56,7 +28,11 @@ nav a {
     color: var(--accent-color);
   }
   transition: color 250ms var(--transition-funktion);
+  & .current {
+    color: var(--accent-color);
+  }
 }
+
 .current::after {
   content: '';
   position: absolute;
@@ -68,16 +44,16 @@ nav a {
   border-radius: 2px;
 }
 
-.contacts-list {
-  display: flex;
+.contacts {
+  @include flex-alignment();
   margin-left: auto;
 }
+.contacts__item:last-child {
+  margin-left: 50px;
+}
 
-.contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.contacts__link {
+  @include font($fw: 500);
   color: var(--primeri-text-color);
   text-decoration: none;
   display: flex;
@@ -89,7 +65,7 @@ nav a {
   transition: color 250ms var(--transition-funktion);
 }
 
-.header-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
