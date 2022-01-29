@@ -1,22 +1,19 @@
-.clients-title {
-  font-size: 36px;
-  line-height: 1.17;
+.clients__title {
   text-align: center;
-  letter-spacing: 0.03em;
+  @include font(36px, 700, 1.17, 0.03em);
   color: var(--title-text-color);
   margin: 0 0 50px 0;
 }
-.clients-list {
+.companies {
   display: flex;
   justify-content: center;
 }
-.clients-item:not(:last-child) {
+.companies__item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-link {
-  display: flex;
+.companies__link {
   justify-content: center;
-  align-items: center;
+  @include flex-alignment();
   width: 170px;
   height: 92px;
   color: #afb1b8;
@@ -28,6 +25,6 @@
     color: var(--accent-color);
   }
 }
-.clients-icon {
+.companies__icon {
   fill: currentColor;
 }

@@ -3,16 +3,13 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+.filter__button {
   text-align: center;
-  letter-spacing: 0.03em;
+  @include font(16px, 500, 1.63, 0.03em);
   color: var(--title-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
@@ -31,23 +28,23 @@
   }
 }
 
-.current-button {
+.current--btn {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.portfolio-list {
+.grid {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
-.portfolio-item {
+.grid__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.card-link {
+.product {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms var(--transition-funktion);
@@ -57,42 +54,37 @@
       0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.portfolio-card-text {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-}
 
-.portfolio-title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-}
-.portfolio-text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--primeri-text-color);
-}
-.portfolio-wrap {
+.product__img-holder {
   position: relative;
   overflow: hidden;
 }
-.portfolio-overlay-text {
+.product__overlay {
   position: absolute;
   top: 100%;
   height: 100%;
   padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(18px, 400, 1.56, 0.03em);
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms var(--transition-funktion);
-  .card-link:hover &,
-  .card-link:focus & {
+  .product:hover &,
+  .product:focus & {
     transform: translateY(-100%);
   }
+}
+
+.description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.description__title {
+  margin-bottom: 4px;
+  @include font(18px, 700, 2, 0.06em);
+  color: var(--title-text-color);
+}
+.description__text {
+  color: var(--primeri-text-color);
+  @include font(16px, 400, 1.87, 0.03em);
 }
