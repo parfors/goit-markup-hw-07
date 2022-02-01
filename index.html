@@ -16,14 +16,18 @@
   <body>
     <!--header-->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <a class="logo" href="./index.html"
-          >Web<span class="logo__part logo_part--header-color">Studio</span></a
+          >Web<span class="logo--dark">Studio</span></a
         >
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="current site-nav__link" href="./index.html">Студия</a>
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
@@ -33,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts contacts-margin">
+        <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com"
               ><svg class="contacts__icon" width="16" height="12">
@@ -57,16 +61,16 @@
     <main>
       <!--hero-->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container">
           <h1 class="hero__tile">Эффективные решения для вашего бизнеса</h1>
           <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--our features-->
-      <section class="features section">
+      <section class="section">
         <div class="container">
-          <h2 class="features__head visually-hidden">Our advantages</h2>
-          <ul class="advantages__list">
+          <h2 class="section__title visually-hidden">Our advantages</h2>
+          <ul class="advantages">
             <li class="advantages__item">
               <div class="advantages__iconholder">
                 <svg class="advantages__icon" width="70" height="70">
@@ -119,38 +123,38 @@
         </div>
       </section>
       <!--our techniques-->
-      <section class="techniques section">
+      <section class="section section--no-padding-top">
         <div class="container">
-          <h2 class="techniques__title">Чем мы занимаемся</h2>
-          <ul class="techniques__list">
-            <li class="tech-card">
-              <div class="tech-card__wrap">
+          <h2 class="section__title">Чем мы занимаемся</h2>
+          <ul class="techniques">
+            <li class="techniques__item">
+              <div class="techniques__wrap">
                 <img
                   src="./images/img.jpg"
                   alt="Процесс разработки кода"
                   width="370"
                 />
-                <p class="tech-card__text">Десктопные приложения</p>
+                <p class="techniques__text">Десктопные приложения</p>
               </div>
             </li>
-            <li class="tech-card">
-              <div class="tech-card__wrap">
+            <li class="techniques__item">
+              <div class="techniques__wrap">
                 <img
                   src="./images/img1.jpg"
                   alt="Процесс подбора стилей для мобильного приложения"
                   width="370"
                 />
-                <p class="tech-card__text">Мобильные приложения</p>
+                <p class="techniques__text">Мобильные приложения</p>
               </div>
             </li>
-            <li class="tech-card">
-              <div class="tech-card__wrap">
+            <li class="techniques__item">
+              <div class="techniques__wrap">
                 <img
                   src="./images/img2.jpg"
                   alt="Подбор цветовой гаммы"
                   width="370"
                 />
-                <p class="tech-card__text">Дизайнерские решения</p>
+                <p class="techniques__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>

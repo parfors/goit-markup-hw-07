@@ -1,24 +1,19 @@
-.techniques {
+.section--no-padding-top {
   padding-top: 0px;
 }
-.techniques__title {
-  text-align: center;
-  @include font(36px, 700, 1.17, 0.03em);
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
-.techniques__list {
+
+.techniques {
   display: flex;
   margin-right: -30px;
 }
-.tech-card {
+.techniques__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
-.tech-card__wrap {
+.techniques__wrap {
   position: relative;
 }
-.tech-card__text {
+.techniques__text {
   position: absolute;
   bottom: 0;
   height: 70px;

@@ -2,10 +2,10 @@
   border-bottom: #ececec 1px solid;
 }
 
-.header-container {
+.header__container {
   @include flex-alignment();
 }
-.logo_part--header-color {
+.logo--dark {
   color: #000000;
 }
 .site-nav {
@@ -29,10 +29,10 @@
   }
   transition: color 250ms var(--transition-funktion);
 }
-.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
-.current::after {
+.site-nav__link--current::after {
   content: '';
   position: absolute;
   width: 100%;
