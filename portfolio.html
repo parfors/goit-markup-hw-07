@@ -16,9 +16,9 @@
   <body>
     <!--header-->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <a class="logo" href="./index.html"
-          >Web<span class="logo__part logo_part--header-color">Studio</span></a
+          >Web<span class="logo--dark">Studio</span></a
         >
         <nav>
           <ul class="site-nav">
@@ -26,7 +26,9 @@
               <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="current site-nav__link" href="./portfolio.html"
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -35,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts contacts-margin">
+        <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com"
               ><svg class="contacts__icon" width="16" height="12">
@@ -63,7 +65,7 @@
           <h1 class="portfolio__title visually-hidden">Portfolio</h1>
           <ul class="filter">
             <li class="filter__item">
-              <button class="filter__button current--btn">Все</button>
+              <button class="filter__button">Все</button>
             </li>
             <li class="filter__item">
               <button class="filter__button">Веб-сайты</button>
