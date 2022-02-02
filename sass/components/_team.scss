@@ -1,18 +1,12 @@
-.team {
+.section--other-background {
   background-color: #f5f4fa;
 }
-.team__title {
-  text-align: center;
-  @include font(36px, 700, 1.17, 0.03em);
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
 
-.team-list {
+.team {
   display: flex;
   margin-right: -30px;
 }
-.team-card {
+.team__item {
   flex-basis: calc(100% / 4 -30px);
   margin-right: 30px;
   background-color: #ffffff;
@@ -20,16 +14,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-card__description {
+.team-card__thumb {
   padding: 30px 0;
 }
-.team-card__title {
+.team__title {
   text-align: center;
   @include font(16px, 500, 1.19, 0.03em);
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.team-card__text {
+.team__text {
   text-align: center;
   @include font(16px, 400, 1.19, 0.03em);
   margin-bottom: 16px;
